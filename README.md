@@ -8,6 +8,7 @@ Configuration:
 
 * Xcode 11.2
 * Swift 5.1.2
+* swift-tools-version:5.1
 * macOS Mojave 10.14.6 (18G1012)
 
 Steps:
