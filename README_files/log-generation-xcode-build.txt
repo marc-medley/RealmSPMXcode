@@ -1,0 +1,72 @@
+CompileC .../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Intermediates.noindex/RealmSPMXcode.build/Debug/RealmCore.build/Objects-normal/x86_64/terminate.o .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'RealmCore' from project 'RealmSPMXcode')
+    cd .../RealmSPMXcode
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target x86_64-apple-macos10.10 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++14 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DREALM_NO_CONFIG -DREALM_INSTALL_LIBEXECDIR= -DREALM_ENABLE_ASSERTIONS=1 -DREALM_ENABLE_ENCRYPTION=1 -DREALM_VERSION_MAJOR=5 -DREALM_VERSION_MINOR=23 -DREALM_VERSION_PATCH=5 -DREALM_VERSION_EXTRA= -DREALM_VERSION_STRING=5.23.5 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -index-store-path .../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Index/DataStore -I.../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Products/Debug/include -I.../RealmSPMXcode/.build/checkouts/realm-core/src -Isrc -I.../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Intermediates.noindex/RealmSPMXcode.build/Debug/RealmCore.build/DerivedSources-normal/x86_64 -I.../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Intermediates.noindex/RealmSPMXcode.build/Debug/RealmCore.build/DerivedSources/x86_64 -I.../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Intermediates.noindex/RealmSPMXcode.build/Debug/RealmCore.build/DerivedSources -F.../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Products/Debug -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -MMD -MT dependencies -MF .../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Intermediates.noindex/RealmSPMXcode.build/Debug/RealmCore.build/Objects-normal/x86_64/terminate.d --serialize-diagnostics .../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Intermediates.noindex/RealmSPMXcode.build/Debug/RealmCore.build/Objects-normal/x86_64/terminate.dia -c .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp -o .../Library/Developer/Xcode/DerivedData/RealmSPMXcode-bzkcfhvtjxxammfcdoygbnkwuwce/Build/Intermediates.noindex/RealmSPMXcode.build/Debug/RealmCore.build/Objects-normal/x86_64/terminate.o
+
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:129:39: error: expected ';' after expression
+    ss << file << ":" << line << ": " REALM_VER_CHUNK " " << message << '\n';
+                                      ^
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:19:
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.hpp:26:
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/version.hpp:29:52: note: expanded from macro 'REALM_VER_CHUNK'
+#define REALM_VER_CHUNK "[" REALM_PRODUCT_NAME "-" REALM_VERSION_STRING "]"
+                                                   ^
+In file included from <built-in>:400:
+<command line>:9:30: note: expanded from here
+#define REALM_VERSION_STRING 5.23.5
+                             ^
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:129:39: error: invalid suffix '.5' on floating constant
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:19:
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.hpp:26:
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/version.hpp:29:52: note: expanded from macro 'REALM_VER_CHUNK'
+#define REALM_VER_CHUNK "[" REALM_PRODUCT_NAME "-" REALM_VERSION_STRING "]"
+                                                   ^
+In file included from <built-in>:400:
+<command line>:9:34: note: expanded from here
+#define REALM_VERSION_STRING 5.23.5
+                                 ^
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:137:39: error: expected ';' after expression
+    ss << file << ':' << line << ": " REALM_VER_CHUNK " " << message;
+                                      ^
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:19:
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.hpp:26:
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/version.hpp:29:52: note: expanded from macro 'REALM_VER_CHUNK'
+#define REALM_VER_CHUNK "[" REALM_PRODUCT_NAME "-" REALM_VERSION_STRING "]"
+                                                   ^
+In file included from <built-in>:400:
+<command line>:9:30: note: expanded from here
+#define REALM_VERSION_STRING 5.23.5
+                             ^
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:137:39: error: invalid suffix '.5' on floating constant
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:19:
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.hpp:26:
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/version.hpp:29:52: note: expanded from macro 'REALM_VER_CHUNK'
+#define REALM_VER_CHUNK "[" REALM_PRODUCT_NAME "-" REALM_VERSION_STRING "]"
+                                                   ^
+In file included from <built-in>:400:
+<command line>:9:34: note: expanded from here
+#define REALM_VERSION_STRING 5.23.5
+                                 ^
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:147:39: error: expected ';' after expression
+    ss << file << ':' << line << ": " REALM_VER_CHUNK " " << message << " with " << interesting_names << " = ";
+                                      ^
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:19:
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.hpp:26:
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/version.hpp:29:52: note: expanded from macro 'REALM_VER_CHUNK'
+#define REALM_VER_CHUNK "[" REALM_PRODUCT_NAME "-" REALM_VERSION_STRING "]"
+                                                   ^
+In file included from <built-in>:400:
+<command line>:9:30: note: expanded from here
+#define REALM_VERSION_STRING 5.23.5
+                             ^
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:147:39: error: invalid suffix '.5' on floating constant
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.cpp:19:
+In file included from .../RealmSPMXcode/.build/checkouts/realm-core/src/realm/util/terminate.hpp:26:
+.../RealmSPMXcode/.build/checkouts/realm-core/src/realm/version.hpp:29:52: note: expanded from macro 'REALM_VER_CHUNK'
+#define REALM_VER_CHUNK "[" REALM_PRODUCT_NAME "-" REALM_VERSION_STRING "]"
+                                                   ^
+In file included from <built-in>:400:
+<command line>:9:34: note: expanded from here
+#define REALM_VERSION_STRING 5.23.5
+                                 ^
+6 errors generated.

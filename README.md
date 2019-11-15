@@ -4,10 +4,19 @@
 
 An Xcode 11 project which is generated from an executable-type Swift Package which has RealmSwift as a dependency does not build. 
 
+The following issues have been [reported as SwiftPM bugs](https://github.com/apple/swift-package-manager/blob/master/Documentation/Resources.md#reporting-a-swiftpm-bug):
+
+* Swift Bug Reporter [SR-11789: `generate-xcodeproj` does not preserve quotes in `.define(...)`](https://bugs.swift.org/browse/SR-11789)
+* Swift Bug Reporter [SR-11790: `generate-xcodeproj` fails to provide `.headerSearchPath(…)` includes](https://bugs.swift.org/browse/SR-11790)
+* See also: GitHub realm/realm-cocoa/issues/6345: [[Xcode 11] swift package generate-xcodeproj with RealmSwift dependency does not build.](https://github.com/realm/realm-cocoa/issues/6345)
+
+Log file: [log-swift_build.txt](README_files/log-swift_build.txt), [log-generation-xcode-build.txt](README_files/log-generation-xcode-build.txt)
+
 Configuration:
 
-* Xcode 11.2
-* Swift 5.1.2
+* Xcode 11.2.1 (11B500)
+* Swift 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+* swift-tools-version:5.1
 * macOS Mojave 10.14.6 (18G1012)
 
 Steps:
